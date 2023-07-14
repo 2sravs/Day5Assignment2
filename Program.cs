@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,20 +22,17 @@ namespace ConAssign_2
             {
                 Console.WriteLine(i);
             }
-            for(int i = 0; i < elementList.Count; i++)
-            {
-                Console.WriteLine(i);
-                if (elementList[i] == "data")
-                {
-                    Console.WriteLine("Data is stored in the list");
-                }
-            }
+            Console.WriteLine("Total number of elements:\t "+elementList.Count);
+           
+
             elementList.Add("fig");
+            Console.WriteLine("*****adding element list****");
             foreach (var j in elementList)
             {
                 Console.WriteLine(j);
             }
             elementList.Remove("banana");
+            Console.WriteLine("*****Removing the  List*******");
             foreach(var k in elementList)
             {
                 Console.WriteLine(k);
